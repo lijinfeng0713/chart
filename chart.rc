@@ -1,0 +1,273 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\chart.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\chart.ico"
+IDI_ICON2               ICON    DISCARDABLE     "res\\logo.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "锋哥聊天软件 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2015",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_CHART_DIALOG DIALOGEX 0, 0, 441, 310
+STYLE DS_MODALFRAME | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "锋哥"
+FONT 9, "宋体"
+BEGIN
+    GROUPBOX        "锋哥聊天",IDC_STATIC,17,14,403,242
+    GROUPBOX        "聊天记录",IDC_STATIC,27,31,222,116
+    GROUPBOX        "好友列表",IDC_STATIC,271,96,131,154
+    GROUPBOX        "发送消息",IDC_STATIC,27,155,221,56
+    PUSHBUTTON      "发送",IDC_BUTTON1,139,221,49,23
+    PUSHBUTTON      "取消",IDC_BUTTON2,198,221,50,23
+    GROUPBOX        "添加好友",IDC_STATIC,271,31,131,56
+    LTEXT           "好友名",IDC_STATIC,275,46,31,14
+    EDITTEXT        IDC_EDIT1,306,42,42,16,ES_AUTOHSCROLL
+    LTEXT           "IP地址",IDC_STATIC,276,67,26,13
+    PUSHBUTTON      "添加好友",IDC_BUTTON3,353,40,42,20,BS_MULTILINE
+    GROUPBOX        "发起会话",IDC_STATIC,17,263,232,28
+    EDITTEXT        IDC_INPUTMSG,31,165,216,44,ES_MULTILINE | NOT WS_BORDER | 
+                    WS_VSCROLL
+    LTEXT           "好友IP：",IDC_STATIC,19,275,32,12
+    LTEXT           "端口：",IDC_STATIC,127,275,25,11
+    EDITTEXT        IDC_EDIT5,152,273,29,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "退出登录",IDC_BUTTON4,270,268,150,22
+    CONTROL         "IPAddress1",IDC_IPADDRESS1,"SysIPAddress32",WS_TABSTOP,
+                    306,65,89,15
+    CONTROL         "IPAddress2",IDC_IPADDRESS2,"SysIPAddress32",WS_TABSTOP,
+                    52,273,71,14
+    LISTBOX         IDC_LIST1,275,109,122,136,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | NOT WS_BORDER | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_SHOWINFO,31,41,217,101,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER | WS_VSCROLL
+    PUSHBUTTON      "开始",IDC_BUTTON5,188,273,26,14
+    PUSHBUTTON      "终止服务",IDC_BUTTON6,83,221,48,23
+    PUSHBUTTON      "启动服务",IDC_BUTTON7,27,221,47,23
+    PUSHBUTTON      "结束",IDC_BUTTON8,220,273,24,14
+END
+
+IDD_DIALOG1 DIALOGEX 0, 0, 229, 158
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "用户登录"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "登录",IDC_STATIC,101,14,107,112
+    LTEXT           "用户名：",IDC_STATIC,108,29,34,13
+    EDITTEXT        IDC_EDIT1,144,26,55,15,ES_AUTOHSCROLL
+    LTEXT           "密    码：",IDC_STATIC,107,54,34,14
+    EDITTEXT        IDC_EDIT2,143,52,56,16,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "注册",IDC_BUTTON1,106,88,38,20
+    PUSHBUTTON      "登录",IDC_BUTTON2,160,88,38,20
+    CONTROL         134,IDC_STATIC,"Static",SS_BITMAP,22,20,64,64,
+                    WS_EX_STATICEDGE
+    CTEXT           "锋哥聊天软件",IDC_STATIC,23,96,60,14
+    LTEXT           "version 1.0",IDC_STATIC,33,109,42,12
+    LTEXT           "   Copyright @  2015   Li Jinfeng. All Rights Reserved",
+                    IDC_STATIC,24,135,183,13
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "chart Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "chart\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2015\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "chart.EXE\0"
+            VALUE "ProductName", "chart 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_CHART_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 434
+        VERTGUIDE, 420
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 303
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 222
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP2             BITMAP  DISCARDABLE     "res\\bitmap2.bmp"
+IDB_BITMAP3             BITMAP  DISCARDABLE     "res\\bitmap3.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 chart(&A)..."
+    IDP_SOCKETS_INIT_FAILED "Windows 通信端口初始化失败。"
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\chart.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
